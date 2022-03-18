@@ -8,7 +8,7 @@ class Countries extends controller {
     public function index() {
         $result = $this->CountryModel->getCountries();
 
-        $rows = "";
+        $rows = "a";
         foreach ($result as $country) {
         
             $rows .= "<tr>
