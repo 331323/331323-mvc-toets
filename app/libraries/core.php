@@ -4,8 +4,8 @@
    * Creates URL & loads core controller
    * URL FORMAT - /controller/method/params
    */
-  class core {
-    protected $currentController = 'pages';
+  class Core {
+    protected $currentController = 'conrtry';
     protected $currentMethod = 'index';
     protected $params = [];
 
@@ -52,7 +52,7 @@
         $url = explode('/', $url);
         return $url;
       }else{
-        return array('pages','index');
+        return array('Countries','index');
       }
     }
   }
